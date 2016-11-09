@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div>
+      <button onclick="game()">
+        Play!
+      </button>
+    </div>
+    <script>
+      var list = ["apple", "pear", "peach", "banana", "cherry", "melon"];
+var point = 0;
+var i=0;
+
+game=function(){
+while(i!==5){
+    var temp;
+    temp = prompt('Insert Fruit: ');
+          if (list.includes(temp)) {
+            point = point + 5;
+            i++;
+            alert("Right!");
+          } else {
+            i++;
+            alert("ehhhmmm");
+          }
+
+        }
+        alert("You have totalised " + point + " points");
+      };
+    </script>
+  </body>
+</html>
